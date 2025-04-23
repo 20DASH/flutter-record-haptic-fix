@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/20DASH/flutter-record-haptic-fix/tree/master/record_ios'
     s.license          = { :file => '../LICENSE' }
     s.author           = { 'llfbandit' => 'email@example.com' }
-    s.source           = { :path => '.' }
+    s.source           = { :path => 'https://github.com/20DASH/flutter-record-haptic-fix/tree/master/record_ios' }
 
     s.source_files     = 'record_ios/Sources/record_ios/**/*.swift'
     s.swift_version    = '5.0'
