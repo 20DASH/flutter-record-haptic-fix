@@ -8,6 +8,7 @@
 .pub/
 /build/
 pubspec.lock
+.idea
 
 # melos
 pubspec_overrides.yaml
