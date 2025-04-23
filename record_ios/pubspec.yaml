@@ -1,7 +1,7 @@
 name: record_ios
 description: iOS implementation for record package called by record_platform_interface.
 version: 1.0.0
-homepage: https://github.com/llfbandit/record/tree/master/record_ios
+homepage: https://github.com/20DASH/flutter-record-haptic-fix/tree/master/record_ios
 
 environment:
   sdk: ^3.4.0
