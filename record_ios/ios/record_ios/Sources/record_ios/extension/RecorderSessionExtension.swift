@@ -14,6 +14,15 @@ extension AudioRecordingDelegate {
       throw RecorderError.error(message: "Failed to start recording", details: "setCategory: \(error.localizedDescription)")
     }
     
+    if #available(iOS 13.0, *) {
+        do {
+            try audioSession.setAllowHapticsAndSystemSoundsDuringRecording(true)
+            
+        } catch {
+            throw RecorderError.error(message: "Failed to start recording", details: "setCategory: \(error.localizedDescription)")
+        }
+    }
+    
     do {
       try audioSession.setPreferredSampleRate((config.sampleRate <= 48000) ? Double(config.sampleRate) : 48000.0)
     } catch {

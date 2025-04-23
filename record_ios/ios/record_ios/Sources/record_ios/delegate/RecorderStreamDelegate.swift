@@ -69,7 +69,16 @@ class RecorderStreamDelegate: NSObject, AudioRecordingStreamDelegate {
     }
     
     audioEngine.prepare()
-    try audioEngine.start()
+      
+      DispatchQueue.main.asyncAfter(deadline: .now()) {
+          do {
+              try audioEngine.start()
+          }
+          catch {
+              
+          }
+          
+      }
     
     self.audioEngine = audioEngine
   }
