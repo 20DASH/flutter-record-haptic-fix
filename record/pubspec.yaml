@@ -22,7 +22,7 @@ dependencies:
   record_ios:
     git:
       url: https://github.com/20DASH/flutter-record-haptic-fix.git
-      ref: repath
+      ref: master
       path: 'record_ios'
   record_macos: ^1.0.0
 
